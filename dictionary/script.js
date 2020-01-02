@@ -1,9 +1,11 @@
 // Access dictionary post.php made directly
-alert(postVars["text"]); // Can access the 'text' POST param because dictionary.php put it in a JavaScript dictionary
+alert(post['text']); // Can access the 'text' POST param because dictionary.php put it in a JavaScript dictionary
 
-// OR
-
-// Use a function to write a little less code
-function post(var) {
-  return postVars[var];
+// Or use a function instead if you want to do stuff to it first
+function Post(variable) {
+  // do stuff to variable before returning...
+  var thisVar = post[variable];
+  return thisVar;
 }
+
+alert(Post('text'));

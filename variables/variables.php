@@ -5,5 +5,5 @@ if($_POST) { // Check to make sure params have been sent via POST
     $val = json_encode($value); // Escape value
     $vars .= "var $field = $val;\n";
   }
-  echo "<script>$vars</script>";
+  echo "<script>$vars</script>\n";
 }
