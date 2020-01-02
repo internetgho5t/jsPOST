@@ -27,5 +27,3 @@ Using `post.php` will create a dictionary that you can either use directly in yo
 ## Warnings
 
 I already mentioned this at the top of this README but this is not intended for use with any sensitive data. The POST method exists for a reason; to send data securely to the backend, so using this for sensitive data defeats the purpose. It would be almost as insecure as using the GET method.
-
-I would recommend you use a .htaccess file so you do not need to include the .php extension when you link to `var.php` or `post.php`.
