@@ -11,7 +11,7 @@ This is mostly meant as a workaround if you need a way to access POST data submi
 There are two ways you could go about doing this. Using `var.php` will create javascript variables out of the POST data you can directly use in other javascript files you link to your page. 
 
 ```HTML
-<?php include_once 'var.php'; ?> // creates variables: 'var field = "value";'
+<?php include_once '/path/to/variables.php'; ?> // creates variables: 'var field = "value";'
 <script type="text/javascript" src="/path/to/your_script.js"></script> // so you can use variables in your JavaScript: 'alert(field);'
 ```
 
@@ -20,7 +20,7 @@ There are two ways you could go about doing this. Using `var.php` will create ja
 Using `post.php` will create a dictionary that you can either use directly in your code, or you could create a function that will return the variable you need from the dictionary like `post("field")`. JavaScript examples are included.
 
 ```HTML
-<?php include_once 'post.php'; ?> // creates dictionary: 'var postVars = {field:"Value"};'
+<?php include_once '/path/to/dictionary.php'; ?> // creates dictionary: 'var postVars = {field:"Value"};'
 <script type="text/javascript" src="/path/to/your_script.js"></script> // access directly postVars["field"] or use a function that returns the value post("field");
 ```
 
