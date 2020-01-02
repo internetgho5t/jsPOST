@@ -28,4 +28,4 @@ Using `dictionary.php` will create a dictionary that you can either use directly
 
 I already mentioned this at the top of this README but this is not intended for use with any sensitive data. The POST method exists for a reason; to send data securely to the backend, so using this for sensitive data defeats the purpose. It would be almost as insecure as using the GET method.
 
-I especially want to warn about this because this creates variables in an inline `<script>` tag in your html document head. Be careful folks.
+I especially want to warn about this because this creates variables in an inline `<script>` tag in your html document head.
