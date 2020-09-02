@@ -3,7 +3,7 @@
 if($_POST) { // Check to make sure params have been sent via POST
   foreach($_POST as $field => $value) { // Go through each POST param and output as JavaScript variable
     $val = json_encode($value); // Escape value
-    $vars .= "var $field = $val;\n";
+    $vars .= 'var '.$field.' = "'.$val.'";\n';
   }
   echo "<script>\n$vars</script>\n";
 }
